@@ -1,25 +1,30 @@
-Soojeong Kwak Portfolio v3.1.1
+Soojeong Kwak Portfolio v3.2
 
-Bug fix:
-The previous v3.1 changed only the visible role text.
-On page load, script.js restored the old values from data-ko/data-en.
+Purpose
+- Mobile layout fix only
+- Desktop layout/content preserved
 
-This version updates:
-- visible text
-- data-ko
-- data-en
+Mobile order
+1. Hero
+2. Introduction
+3. Career
+4. Skills
+5. Certifications
+6. Education
+7. Contact
 
-Verified initial KR render:
-- Technometrics — Lead Data Scientist
-- ARPI — Data Scientist
-- Hanwha Ocean — Graduate Industry Project
-- Easy Robotics — Graduate Industry Project
-- Shinsung E&G — Graduate Industry Project
-- Lime Solution — Data Analyst
+Mobile fixes
+- Desktop 2-column grid collapses to 1 column
+- Sticky company metadata disabled
+- Company layout collapses to 1 column
+- Project header/body collapse to 1 column
+- Sidebar stacks vertically
+- Horizontal overflow prevented
+- Mobile spacing reduced
 
-Preview:
-  cd soojeong-portfolio-v3.1.1
-  python3 -m http.server 8013
+Preview
+  cd soojeong-portfolio-v3.2
+  python3 -m http.server 8014
 
-Open:
-  http://localhost:8013
+Open
+  http://localhost:8014

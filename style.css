@@ -734,3 +734,294 @@ button{font:inherit}
     text-shadow:none !important;
   }
 }
+
+
+/* ===== v3.2 mobile layout fix ===== */
+@media (max-width: 768px) {
+
+  /* Overall page width */
+  .wrap{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  /* Header: keep only brand + language toggle */
+  .topbar-inner{
+    min-height:52px !important;
+  }
+
+  .nav{
+    gap:10px !important;
+  }
+
+  .nav a{
+    display:none !important;
+  }
+
+  /* Hero */
+  .hero{
+    min-height:auto !important;
+    padding:28px 0 22px !important;
+  }
+
+  .hero h1{
+    font-size:34px !important;
+    line-height:1.04 !important;
+  }
+
+  .hero-role{
+    margin-top:10px !important;
+    font-size:17px !important;
+  }
+
+  .hero-tags{
+    margin-top:6px !important;
+    font-size:11.5px !important;
+    line-height:1.55 !important;
+  }
+
+  /* Introduction */
+  .introduction{
+    padding:24px 0 24px !important;
+  }
+
+  .introduction h2{
+    font-size:21px !important;
+    margin-bottom:12px !important;
+  }
+
+  .intro-copy{
+    max-width:none !important;
+  }
+
+  .intro-copy p{
+    font-size:13.5px !important;
+    line-height:1.65 !important;
+  }
+
+  .intro-copy p + p{
+    margin-top:8px !important;
+  }
+
+  /* Main desktop 2-column grid -> one vertical column */
+  .portfolio-grid{
+    display:block !important;
+  }
+
+  .career-column{
+    display:block !important;
+    width:100% !important;
+    min-width:0 !important;
+    padding:22px 0 30px !important;
+    border-right:0 !important;
+  }
+
+  .sidebar-column{
+    display:block !important;
+    width:100% !important;
+    min-width:0 !important;
+    padding:28px 0 34px !important;
+    border-top:1px solid var(--line) !important;
+  }
+
+  /* Company layout -> one vertical column */
+  .company,
+  .career-column .company,
+  .career-entry{
+    display:block !important;
+    grid-template-columns:none !important;
+    width:100% !important;
+    padding-bottom:34px !important;
+  }
+
+  .company + .company,
+  .career-column .company + .company{
+    padding-top:30px !important;
+    border-top:1px solid #e9e9e9 !important;
+  }
+
+  .company-meta,
+  .career-meta{
+    position:static !important;
+    top:auto !important;
+    width:100% !important;
+    margin:0 0 16px !important;
+  }
+
+  .company-meta h3,
+  .career-meta h2{
+    margin-top:8px !important;
+    font-size:23px !important;
+  }
+
+  .company-meta .title,
+  .career-role{
+    font-size:12.5px !important;
+    margin-top:4px !important;
+  }
+
+  .company-note,
+  .career-responsibilities{
+    margin-top:12px !important;
+    font-size:11.5px !important;
+    line-height:1.65 !important;
+  }
+
+  /* Projects */
+  .projects,
+  .career-projects{
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .project{
+    padding:24px 0 26px !important;
+  }
+
+  .single-project-company .project{
+    padding-top:6px !important;
+    padding-bottom:0 !important;
+  }
+
+  .project-head{
+    display:block !important;
+    grid-template-columns:none !important;
+    margin-bottom:16px !important;
+  }
+
+  .project-head .eyebrow,
+  .project-head .project-client{
+    display:block !important;
+    margin-bottom:4px !important;
+  }
+
+  .project-head h4,
+  .project-head h3{
+    display:block !important;
+    margin:0 0 4px !important;
+    font-size:18px !important;
+  }
+
+  .project-head .date,
+  .project-head .project-period{
+    display:block !important;
+    margin-top:3px !important;
+    font-size:10.5px !important;
+  }
+
+  .project-grid,
+  .project-body{
+    display:block !important;
+    width:100% !important;
+  }
+
+  .project-grid > *,
+  .project-body > *{
+    width:100% !important;
+  }
+
+  .project-grid .label,
+  .project-body .label{
+    display:block !important;
+    margin:14px 0 5px !important;
+    font-size:9.5px !important;
+  }
+
+  .project-grid p,
+  .project-grid ul,
+  .project-body p,
+  .project-body ul{
+    font-size:12.5px !important;
+    line-height:1.6 !important;
+  }
+
+  .project-grid ul,
+  .project-body ul{
+    padding-left:18px !important;
+  }
+
+  /* Sidebar sections stack naturally: Skills -> Certifications -> Education */
+  .side-section{
+    width:100% !important;
+    padding:0 0 26px !important;
+  }
+
+  .side-section + .side-section{
+    padding-top:24px !important;
+  }
+
+  .side-section h2{
+    font-size:21px !important;
+    margin-bottom:16px !important;
+  }
+
+  .skill-group + .skill-group{
+    margin-top:16px !important;
+  }
+
+  .skill-group p:not(.side-label){
+    font-size:12.5px !important;
+    line-height:1.6 !important;
+  }
+
+  .cert-row{
+    grid-template-columns:68px minmax(0,1fr) !important;
+    gap:10px !important;
+  }
+
+  .cert-row span{
+    font-size:10.5px !important;
+  }
+
+  .cert-row strong{
+    font-size:12px !important;
+  }
+
+  .education-item h3{
+    font-size:12.5px !important;
+  }
+
+  .edu-date,
+  .thesis{
+    font-size:11.5px !important;
+  }
+
+  /* Contact last */
+  .contact{
+    padding:28px 0 36px !important;
+  }
+
+  .contact h2{
+    font-size:22px !important;
+    margin-bottom:16px !important;
+  }
+
+  .contact-links{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:12px !important;
+  }
+
+  .contact-email{
+    font-size:11.5px !important;
+  }
+
+  /* Prevent accidental horizontal overflow */
+  body,
+  main,
+  section,
+  article,
+  aside,
+  div{
+    max-width:100% !important;
+  }
+
+  img,
+  svg{
+    max-width:100% !important;
+    height:auto !important;
+  }
+}

@@ -1025,3 +1025,62 @@ button{font:inherit}
     height:auto !important;
   }
 }
+
+
+/* ===== v4.0 Research + Patents ===== */
+.research-link,
+.patent-link{
+  display:block;
+  color:var(--text);
+  text-decoration:none;
+  transition:opacity .16s ease;
+}
+
+.research-link{
+  margin-top:6px;
+  font-size:12.5px;
+  line-height:1.55;
+  font-weight:600;
+}
+
+.patent-note{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:10.5px;
+}
+
+.patent-link{
+  font-size:12px;
+  line-height:1.55;
+}
+
+.patent-link + .patent-link{
+  margin-top:12px;
+}
+
+.research-link:hover,
+.patent-link:hover{
+  opacity:.58;
+}
+
+.research-link:focus-visible,
+.patent-link:focus-visible{
+  outline:2px solid #555;
+  outline-offset:4px;
+}
+
+@media(max-width:768px){
+  .research-link{font-size:12.5px;}
+  .patent-link{font-size:12px;line-height:1.6;}
+  .patent-link + .patent-link{margin-top:10px;}
+}
+
+@media print{
+  .research-link,
+  .patent-link{
+    font-size:7.4pt !important;
+    color:#111 !important;
+    text-decoration:none !important;
+  }
+  .patent-note{font-size:6.8pt !important;}
+}

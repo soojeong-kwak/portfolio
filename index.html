@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Soojeong Kwak | Data Scientist Portfolio</title>
+<meta content="Data Scientist portfolio of Soojeong Kwak, focused on ML model development, time series forecasting, predictive analytics, and applied AI across manufacturing, healthcare, mobility, and public-sector projects." name="description"/>
+<link href="style.css" rel="stylesheet"/>
+<meta content="#ffffff" name="theme-color"/><meta content="Soojeong Kwak | Data Scientist Portfolio" property="og:title"/><meta content="ML model development, time series forecasting, predictive analytics, and applied AI across multiple industries." property="og:description"/><meta content="website" property="og:type"/><meta content="summary" name="twitter:card"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/></head>
+<body><!-- soojeong-portfolio-v2.3 -->
+<!-- soojeong-portfolio-v2.2 -->
+<header class="topbar">
+<div class="wrap topbar-inner">
+<a class="brand" href="#top">Soojeong Kwak</a>
+<nav aria-label="Primary navigation" class="nav">
+<a href="#introduction">Introduction</a>
+<a href="#skills">Skills</a>
+<a href="#certifications">Certifications</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+<button aria-label="Switch language" class="lang" id="langBtn" type="button">
+<span class="active" id="krState">KR</span><span>/</span><span id="enState">EN</span>
+</button>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero wrap">
+<h1>Soojeong Kwak</h1>
+<p class="hero-role">Lead Data Scientist</p>
+<p class="hero-tags">Machine Learning · Time Series · Applied AI</p>
+</section>
+<!-- Full-width Career heading -->
+<section class="introduction wrap" id="introduction"><h2>Introduction</h2><div class="intro-copy ko"><p><strong>안녕하세요. 데이터 사이언티스트 곽수정입니다.</strong></p><p>공공, 제조, 의료, 모빌리티 등 다양한 산업에서 데이터 분석과 ML 모델 개발을 수행하며, 문제 정의부터 데이터 분석, 예측 모델 개발, 서비스 적용까지 전 과정을 경험했습니다.</p><p>기술 자체보다 문제를 해결하는 과정에 집중하며, 데이터가 실제 의사결정과 서비스의 가치로 이어질 수 있도록 고민합니다.</p></div><div class="intro-copy en" hidden=""><p><strong>Hello, I'm Soojeong Kwak, a Data Scientist.</strong></p><p>I have worked across public sector, manufacturing, healthcare, and mobility, covering the full workflow from problem definition and data analysis to ML model development and service implementation.</p><p>I focus less on technology itself and more on solving the right problem, with the goal of turning data into practical value for decisions and services.</p></div></section>
+<!-- Confirmed vertical 2-column area -->
+<div class="portfolio-grid wrap">
+<section aria-label="Career history" class="career-column">
+<article class="company">
+<aside class="company-meta">
+<p class="date" data-en="Aug 2024 — Jul 2026" data-ko="2024.08 — 2026.07">2024.08 — 2026.07</p>
+<h3>Technometrics</h3>
+<p class="title" data-en="Lead Data Scientist" data-ko="Lead Data Scientist">Lead Data Scientist</p>
+<p class="company-note ko">프로젝트 일정 · 리스크 · 이슈 관리<br/>현업 조직 협업 및 산출물 관리<br/>데이터 분석 기반 모델 개발 및 결과 분석</p>
+<p class="company-note en" hidden="">Managed schedules, risks, and issues<br/>Coordinated with business teams and deliverables<br/>Developed data-driven models and analyzed results</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">POSCO HOLDINGS</p>
+<h4 data-en="BPED Predictive Monitoring" data-ko="BPED 예측 모니터링">BPED 예측 모니터링</h4>
+<p class="date" data-en="May 2025 — Nov 2025" data-ko="2025.05 — 2025.11">2025.05 — 2025.11</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">공정 시계열 기반 5시간 이후 타겟 변수 예측 및 이상감지 결과를 활용한 조업지표 산출</p>
+<p class="en" hidden="">Forecasted process targets five hours ahead and converted anomaly signals into operational indicators.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>정상가동 구간 정의 및 데이터 전처리</li>
+<li>파생변수 생성 · 이상치 제거 · 결측 보간</li>
+<li>Adaptive Moving Average 기반 예측 로직 개발</li>
+<li>조업지표 산출 및 정확도 검증</li>
+<li>Docker · BentoML 기반 모델 이미지 빌드 및 배포</li>
+<li>API 세팅 및 시뮬레이션 테스트</li>
+</ul>
+<ul class="en" hidden="">
+<li>Defined normal operating windows and preprocessed process data</li>
+<li>Engineered features, removed outliers, and imputed missing values</li>
+<li>Developed forecasting logic with Adaptive Moving Average</li>
+<li>Derived operational indicators and validated accuracy</li>
+<li>Built and deployed model images with Docker and BentoML</li>
+<li>Configured APIs and ran simulation tests</li>
+</ul>
+</div>
+</section>
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">BATTERFLY</p>
+<h4 data-en="Battery SOH Prediction" data-ko="배터리 SOH 예측">배터리 SOH 예측</h4>
+<p class="date" data-en="Feb 2025 — May 2025" data-ko="2025.02 — 2025.05">2025.02 — 2025.05</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">전기택시 · 승용차 장기운행 데이터 기반 배터리 퇴화 영향 인자 분석 및 SOH 예측 성능 개선</p>
+<p class="en" hidden="">Analyzed long-term EV fleet data to validate degradation factors and improve battery SOH prediction.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>장기운행 데이터 분석</li>
+<li>데이터마트 생성 및 EDA · ML 분석</li>
+<li>배터리 퇴화율 영향 인자 유효성 검증</li>
+<li>통계 이론 · 선행연구 기반 목표 설정</li>
+<li>예측 결과 기반 평가 보고서 작성</li>
+<li>후속 연구 방향성 수립</li>
+</ul>
+<ul class="en" hidden="">
+<li>Analyzed long-term electric taxi and passenger-vehicle data</li>
+<li>Built data marts and conducted EDA and ML analysis</li>
+<li>Validated factors affecting battery degradation</li>
+<li>Defined targets using statistical theory and prior studies</li>
+<li>Prepared evaluation reports from prediction results</li>
+<li>Defined directions for follow-up research</li>
+</ul>
+<span class="label">Impact</span>
+<p class="impact ko">선행연구 대비 MAPE 10% 이상 개선 목표 달성 · 예측 정확도 14.23% 향상</p>
+<p class="impact en" hidden="">Achieved &gt;10% MAPE improvement target · Improved prediction accuracy by 14.23%</p>
+</div>
+</section>
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">POSCO DX</p>
+<h4 data-en="Process Parameter Forecasting" data-ko="조업 제원치 예측">조업 제원치 예측</h4>
+<p class="date" data-en="Aug 2024 — Dec 2024" data-ko="2024.08 — 2024.12">2024.08 — 2024.12</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">Know-how 기반 수작업 분석을 AI 예측 체계로 전환하고 M+2 시점의 조업 제원치 예측 프레임워크 구축</p>
+<p class="en" hidden="">Replaced know-how-driven manual analysis with an AI framework for forecasting process parameters two months ahead.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>제원치별 데이터 전처리</li>
+<li>예측 데이터마트 구성 및 관리</li>
+<li>예측 AI 모델 개발 · 검증 · 튜닝</li>
+<li>알고리즘 · 데이터 · 모델 파라미터 조합 테스트</li>
+<li>API 환경 구성 및 코드 모듈화</li>
+<li>고도화 방향성 수립</li>
+</ul>
+<ul class="en" hidden="">
+<li>Preprocessed data by process parameter</li>
+<li>Built and managed forecasting data marts</li>
+<li>Developed, validated, and tuned prediction models</li>
+<li>Tested algorithm, data, and model parameter combinations</li>
+<li>Configured API environments and modularized code</li>
+<li>Defined directions for model enhancement</li>
+</ul>
+<span class="label">Impact</span>
+<p class="impact ko">월평균 예측 정확도 84% 달성 · 목표 KPI 80.8% 대비 +3.2%p</p>
+<p class="impact en" hidden="">Achieved 84% average monthly accuracy · Exceeded 80.8% KPI by 3.2%p</p>
+</div>
+</section>
+</div>
+</article>
+<article class="company single-project-company">
+<aside class="company-meta">
+<p class="date" data-en="Apr 2024 — Jul 2024" data-ko="2024.04 — 2024.07">2024.04 — 2024.07</p>
+<h3>ARPI</h3>
+<p class="title" data-en="Data Scientist" data-ko="Data Scientist">Data Scientist</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">MEDICAL AI</p>
+<h4>ECG Digitization</h4>
+<p class="date" data-en="Apr 2024 — Jul 2024" data-ko="2024.04 — 2024.07">2024.04 — 2024.07</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">ECG 이미지에서 신호를 분리하고 실제 신호 값을 추출하는 Digitization 모듈 및 GUI 구현</p>
+<p class="en" hidden="">Built ECG digitization modules and a GUI to isolate waveform signals and recover numeric values from ECG images.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>ECG Buddy 성능 평가</li>
+<li>ECG 이미지 신호 분리 모듈 개발</li>
+<li>ECG 이미지 실제 신호 값 추출</li>
+<li>ECG Digitization GUI 구현</li>
+</ul>
+<ul class="en" hidden="">
+<li>Evaluated ECG Buddy performance</li>
+<li>Developed waveform separation modules for ECG images</li>
+<li>Extracted numeric signal values from ECG images</li>
+<li>Implemented an ECG digitization GUI</li>
+</ul>
+</div>
+</section>
+</div>
+</article>
+<article class="company single-project-company">
+<aside class="company-meta">
+<p class="date" data-en="Jan 2023 — Aug 2023" data-ko="2023.01 — 2023.08">2023.01 — 2023.08</p>
+<h3>Hanwha Ocean</h3>
+<p class="title" data-en="Graduate Industry Project" data-ko="Graduate Industry Project">Graduate Industry Project</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">SEMANTIC AI</p>
+<h4>Semantic Chatbot</h4>
+<p class="date" data-en="Jan 2023 — Aug 2023" data-ko="2023.01 — 2023.08">2023.01 — 2023.08</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">군수 정비 데이터 기반 상황 질의응답을 위한 Semantic Chatbot 시스템 설계 및 언어모델 검증</p>
+<p class="en" hidden="">Designed a semantic chatbot system for maintenance Q&amp;A and evaluated language-model performance on domain data.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>Semantic Chatbot 아키텍처 및 시스템 구성도 설계</li>
+<li>Chatbot 시스템 시나리오 구성</li>
+<li>데이터 수집 및 전처리</li>
+<li>Llama2 기반 언어모델 성능 검증</li>
+<li>Prompt 개발 및 최적화</li>
+</ul>
+<ul class="en" hidden="">
+<li>Designed the chatbot architecture and system structure</li>
+<li>Defined chatbot interaction scenarios</li>
+<li>Collected and preprocessed domain data</li>
+<li>Evaluated Llama2-based language-model performance</li>
+<li>Developed and optimized prompts</li>
+</ul>
+</div>
+</section>
+</div>
+</article>
+<article class="company single-project-company">
+<aside class="company-meta">
+<p class="date" data-en="Mar 2021 — Feb 2022" data-ko="2021.03 — 2022.02">2021.03 — 2022.02</p>
+<h3>Easy Robotics</h3>
+<p class="title" data-en="Graduate Industry Project" data-ko="Graduate Industry Project">Graduate Industry Project</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow">SMART MANUFACTURING</p>
+<h4 data-en="Manufacturing Process Simulation" data-ko="사람-기계 협업공정 시뮬레이션">사람-기계 협업공정 시뮬레이션</h4>
+<p class="date">2021.03 — 2022.02</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">스마트 제조 설비 도입 전 생산성 · 경제성 사전 분석을 위한 공정 시뮬레이션 모듈 검증</p>
+<p class="en" hidden="">Validated process-simulation modules for pre-assessing productivity and economics before smart-manufacturing equipment adoption.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>AS-IS / TO-BE 공정 시나리오 테스트</li>
+<li>시나리오 결과 분석</li>
+<li>실제 작업시간 · 출력 데이터 기반 정확도 검증</li>
+<li>경제성 분석 지표 검증</li>
+</ul>
+<ul class="en" hidden="">
+<li>Tested AS-IS and TO-BE process scenarios</li>
+<li>Analyzed simulation outputs</li>
+<li>Validated accuracy against real work-time and output data</li>
+<li>Validated economic-analysis indicators</li>
+</ul>
+</div>
+</section>
+</div>
+</article>
+<article class="company single-project-company">
+<aside class="company-meta">
+<p class="date" data-en="Mar 2021 — Dec 2021" data-ko="2021.03 — 2021.12">2021.03 — 2021.12</p>
+<h3>Shinsung E&amp;G</h3>
+<p class="title" data-en="Graduate Industry Project" data-ko="Graduate Industry Project">Graduate Industry Project</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow" data-en="PROCUREMENT ANALYTICS" data-ko="자재비 데이터 분석">자재비 데이터 분석</p>
+<h4 data-en="Quotation Evaluation System" data-ko="견적서 평가 시스템">견적서 평가 시스템</h4>
+<p class="date">2021.03 — 2021.12</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">견적 비교 · 검토 프로세스 표준화와 가격 경쟁력 분석을 위한 자재비 · 노무비 평가 시스템 개발</p>
+<p class="en" hidden="">Developed a quotation-evaluation system to standardize cost review and support price-competitiveness analysis.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>KPI 물가정보 기반 표준 자재비 데이터베이스화</li>
+<li>연도별 견적서 · 물가정보 비교 기능 추가</li>
+<li>과거 자재비 시계열 분석 및 미래 추세선 산출</li>
+<li>표준품셈 기반 공수 · 노무비 계산</li>
+<li>웹 페이지 기능 추가 · 보완 및 프로젝트 버전 관리</li>
+</ul>
+<ul class="en" hidden="">
+<li>Built a standard material-cost database from KPI price data</li>
+<li>Added year-over-year quotation and price-data comparison</li>
+<li>Analyzed material-cost time series and projected future trends</li>
+<li>Calculated standard labor effort and labor cost</li>
+<li>Enhanced web functions and managed project versions</li>
+</ul>
+</div>
+</section>
+</div>
+</article>
+<article class="company">
+<aside class="company-meta">
+<p class="date" data-en="Jan 2019 — Dec 2020" data-ko="2019.01 — 2020.12">2019.01 — 2020.12</p>
+<h3>Lime Solution</h3>
+<p class="title" data-en="Data Analyst" data-ko="Data Analyst">Data Analyst</p>
+</aside>
+<div class="projects">
+<section class="project">
+<div class="project-head">
+<p class="eyebrow" data-en="NATIONAL HEALTH INSURANCE SERVICE" data-ko="국민건강보험공단">국민건강보험공단</p>
+<h4 data-en="Financial Forecasting System" data-ko="재정 전망 분석시스템">재정 전망 분석시스템</h4>
+<p class="date" data-en="Jan 2020 — Aug 2020" data-ko="2020.01 — 2020.08">2020.01 — 2020.08</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">기존 엑셀 기반 재정 추계 방식을 시계열 · ML 모델 기반 전망 체계로 전환</p>
+<p class="en" hidden="">Converted spreadsheet-based financial estimation into a time-series and machine-learning forecasting workflow.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>내 · 외부 데이터 수집 및 전처리</li>
+<li>EDA · Data Decomposition 기반 시계열 패턴 분석</li>
+<li>현행 엑셀 추계 방식의 ML 모델 전환</li>
+<li>Feature Engineering 기반 오차 모니터링 시뮬레이션 개발</li>
+<li>변수 유의성 검증 및 전망 모형 테스트</li>
+<li>사용자 매뉴얼 작성 및 R 기초 교육</li>
+</ul>
+<ul class="en" hidden="">
+<li>Collected and preprocessed internal and external data</li>
+<li>Analyzed time-series patterns using EDA and decomposition</li>
+<li>Converted spreadsheet estimation into ML models</li>
+<li>Built error-monitoring simulations through feature engineering</li>
+<li>Validated variable significance and tested forecasting models</li>
+<li>Prepared user manuals and delivered introductory R training</li>
+</ul>
+<span class="label">Impact</span>
+<p class="impact ko">시계열 알고리즘 · H2O AutoML 적용 · Accuracy 5.42% → 1.54%</p>
+<p class="impact en" hidden="">Applied time-series algorithms and H2O AutoML · Accuracy 5.42% → 1.54%</p>
+</div>
+</section>
+<section class="project">
+<div class="project-head">
+<p class="eyebrow" data-en="NATIONAL TAX SERVICE" data-ko="국세청">국세청</p>
+<h4 data-en="Suspicious Transaction Detection" data-ko="이상거래 탐지">이상거래 탐지</h4>
+<p class="date" data-en="Mar 2019 — Feb 2020" data-ko="2019.03 — 2020.02">2019.03 — 2020.02</p>
+</div>
+<div class="project-grid">
+<span class="label">Overview</span>
+<p class="ko">세무 빅데이터 기반 혐의자 도출과 상장법인 변칙거래 탐지를 위한 분석 체계 구축</p>
+<p class="en" hidden="">Built an analytics workflow for identifying suspicious cases and abnormal corporate transactions from tax data.</p>
+<span class="label">Role</span>
+<ul class="ko">
+<li>Hive 기반 데이터 수집 및 전처리</li>
+<li>Rule-base 기반 혐의자 도출</li>
+<li>분석용 DB 구축 및 관리</li>
+<li>Tableau 시각화 테이블 설계 · 개발</li>
+<li>화면 시나리오 설계 및 분석 산출물 작성</li>
+</ul>
+<ul class="en" hidden="">
+<li>Collected and preprocessed data with Hive</li>
+<li>Identified suspicious cases using rule-based logic</li>
+<li>Built and managed analytics databases</li>
+<li>Designed and developed Tableau visualization tables</li>
+<li>Designed screen scenarios and prepared analysis deliverables</li>
+</ul>
+<span class="label">Impact</span>
+<p class="impact ko">XGBoost · Decision Tree 앙상블 적용 · 의심거래내역 34건 적발</p>
+<p class="impact en" hidden="">Applied XGBoost · Decision Tree ensemble · Detected 34 suspicious transactions</p>
+</div>
+</section>
+</div>
+</article>
+</section>
+<aside aria-label="Profile details" class="sidebar-column">
+<section class="side-section" id="skills">
+<h2>Skills</h2>
+<div class="skill-group">
+<p class="side-label">Languages</p>
+<p>Python · R · SQL</p>
+</div>
+<div class="skill-group">
+<p class="side-label">Analysis</p>
+<p>Machine Learning · Time Series · Statistical Analysis · NLP</p>
+</div>
+<div class="skill-group">
+<p class="side-label">Deployment</p>
+<p>Docker · BentoML · API</p>
+</div>
+<div class="skill-group">
+<p class="side-label">Visualization</p>
+<p>Tableau · Python Visualization</p>
+</div>
+</section>
+<section class="side-section" id="certifications">
+<h2>Certifications</h2>
+<div class="cert-list ko"><div class="cert-row"><span>2020.07</span><strong>ADsP (데이터분석 준전문가)</strong></div><div class="cert-row"><span>2019.09</span><strong>SQLD (SQL 개발자)</strong></div><div class="cert-row"><span>2017.11</span><strong>SAS Certified Base Programmer</strong></div><div class="cert-row"><span>2015.12</span><strong>DAsP (데이터아키텍처 준전문가)</strong></div></div>
+<div class="cert-list en" hidden="">
+<div class="cert-row"><span>Jul 2020</span><strong>ADsP (Advanced Data Analytics Semi-Professional)</strong></div>
+<div class="cert-row"><span>Sep 2019</span><strong>SQLD (SQL Developer)</strong></div>
+<div class="cert-row"><span>Nov 2017</span><strong>SAS Certified Base Programmer</strong></div>
+<div class="cert-row"><span>Dec 2015</span><strong>DAsP (Data Architecture Semi-Professional)</strong></div>
+</div>
+</section>
+<section class="side-section" id="education">
+<h2>Education</h2>
+<div class="education-item ko">
+<h3>성균관대학교 일반대학원 · 산업공학과 석사</h3>
+<p class="edu-date">2019.08 – 2023.08 (졸업)</p>
+<p class="side-label thesis-label">Thesis</p>
+<p class="thesis">An Adaptive Window Merging Method for Time Series Forecasting</p>
+</div>
+<div class="education-item en" hidden="">
+<h3>Sungkyunkwan University · M.S. in Industrial Engineering</h3>
+<p class="edu-date">Aug 2019 – Aug 2023</p>
+<p class="side-label thesis-label">Thesis</p>
+<p class="thesis">An Adaptive Window Merging Method for Time Series Forecasting</p>
+</div>
+<div class="education-item ko">
+<h3>동덕여자대학교 · 정보통계학과 학사</h3>
+<p class="edu-date">2013.03 – 2018.08 (졸업)</p>
+</div>
+<div class="education-item en" hidden="">
+<h3>Dongduk Women's University · B.S. in Information Statistics</h3>
+<p class="edu-date">Mar 2013 – Aug 2018</p>
+</div>
+</section>
+</aside>
+</div>
+<!-- Contact returns to full width after both columns end -->
+<section class="contact wrap" id="contact">
+<h2>Contact</h2>
+<div class="contact-links"><button class="contact-action" id="printResume" onclick="window.print()" type="button">Resume (PDF)</button><a class="contact-action" href="mailto:sjkwak408@gmail.com">Email ↗</a><span class="contact-email">sjkwak408@gmail.com</span></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
